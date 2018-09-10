@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.bubbletea.Main2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a flavor you like!"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/bubble1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignEnd="@+id/bubble3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/bubble3"
+        android:layout_marginBottom="21dp"
+        android:src="@drawable/bubble1" />
+
+    <ImageView
+        android:id="@+id/bubble2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:src="@drawable/bubble2" />
+
+    <ImageView
+        android:id="@+id/bubble3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/bubble2"
+        android:layout_toStartOf="@+id/bubble2"
+        android:src="@drawable/bubble3" />
+
+    <ImageView
+        android:id="@+id/bubble4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/bubble1"
+        android:src="@drawable/bubble4" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bubble2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="87dp"
+        android:background="#C2C2C2"
+        android:text="order"
+        android:textColor="#ffff00"
+        android:textSize="25dp"
+        android:onClick="onButtonClicked2"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bubble2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#C2C2C2"
+        android:text="order"
+        android:textColor="#ffff00"
+        android:textSize="25dp"
+        android:onClick="onButtonClicked1"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bubble1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1"
+        android:background="#C2C2C2"
+        android:text="order"
+        android:textColor="#ffff00"
+        android:textSize="25dp"
+        android:onClick="onButtonClicked"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bubble4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#C2C2C2"
+        android:text="order"
+        android:textColor="#ffff00"
+        android:textSize="25dp"
+        android:onClick="onButtonClicked3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignEnd="@+id/button1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignStart="@+id/button1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="13dp"
+        android:text="Lemon Green Tea"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="13dp"
+        android:text="Azuki Brown Rice"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="23dp"
+        android:text="Fresh Lemon Earl Grey"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="23dp"
+        android:text="Rose Lychee Black Tea"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+</RelativeLayout>
